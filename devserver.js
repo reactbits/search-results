@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const webpack = require('webpack');
+const proxyMiddleware = require('http-proxy-middleware');
 const config = require('./webpack.config');
 
 const port = 8000;
@@ -20,6 +21,8 @@ app.use(require('webpack-dev-middleware')(compiler, {
 }));
 
 app.use(require('webpack-hot-middleware')(compiler));
+
+app.use(proxyMiddleware('http://localhost:8094/api'));
 
 app.use(express.static(process.cwd()));
 
