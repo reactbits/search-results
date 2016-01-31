@@ -30,10 +30,21 @@ function Hit(props) {
 	);
 }
 
+function roundTook(took) {
+	if (took < 1000 * 1000) {
+		return 'less than 1ms';
+	} else if (took < 1000 * 1000 * 1000) {
+		const ms = Math.round(took / (1000 * 1000));
+		return `${ms}ms`;
+	}
+	const roundMs = Math.round(took / (1000 * 1000));
+	return `${roundMs / 1000}s`;
+}
+
 export default function SearchResults(props) {
 	const { results } = props;
 	const hits = results.hits || [];
-	const meta = `(1 - ${hits.length} of ${results.total_hits}) took ${results.roundTook}`;
+	const meta = `(1 - ${hits.length} of ${results.total_hits}) took ${roundTook(results.took)}`;
 	const items = hits.map(hit => <Hit key={hit.id} {...hit}/>);
 	return (
 		<div>
