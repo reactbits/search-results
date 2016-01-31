@@ -1,34 +1,5 @@
 import React from 'react';
-import _ from 'lodash';
-
-function Fragment({ html }) {
-	return <li dangerouslySetInnerHTML={{ __html: html }}/>;
-}
-
-function Fragments({ fragments, fieldName }) {
-	const items = fragments.map((f, i) => <Fragment key={i} html={f}/>);
-	return (
-		<div>
-				{fragments.length ? <div>{fieldName}</div> : null}
-				<ul>{items}</ul>
-		</div>
-	);
-}
-
-function Hit(props) {
-	const fragments = _.map(props.fragments, (val, key) =>
-		<Fragments key={key} fieldName={key} fragments={val}/>
-	);
-	return (
-		<li>
-			<b>{props.id}</b>
-			<span className="badge">{props.roundedScore}</span>
-			<div className="well">
-				{fragments}
-			</div>
-		</li>
-	);
-}
+import Hit from './hit';
 
 function roundTook(took) {
 	if (took < 1000 * 1000) {
@@ -44,8 +15,12 @@ function roundTook(took) {
 export default function SearchResults(props) {
 	const { results } = props;
 	const hits = results.hits || [];
-	const meta = `(1 - ${hits.length} of ${results.total_hits}) took ${roundTook(results.took)}`;
 	const items = hits.map(hit => <Hit key={hit.id} {...hit}/>);
+	if (items.length === 0) {
+		return <div>No match</div>;
+	}
+	const took = results.took || 0;
+	const meta = `(1 - ${hits.length} of ${results.total_hits}) took ${roundTook(took)}`;
 	return (
 		<div>
 			<h3>Results</h3>
