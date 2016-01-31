@@ -1,3 +1,7 @@
+[![npm version](https://badge.fury.io/js/react-search-results.svg)](https://badge.fury.io/js/react-search-results)
+[![Build Status](https://travis-ci.org/reactbits/search-results.svg?branch=master)](https://travis-ci.org/reactbits/search-results)
+[![Total downloads](https://img.shields.io/npm/dt/react-search-results.svg)](https://www.npmjs.com/package/react-search-results)
+
 # search-results
 React component to display search results.
 
