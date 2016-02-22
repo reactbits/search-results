@@ -12,7 +12,7 @@ function searchInput(handler) {
 			handler(val);
 		}
 	};
-	return <input type="text" onKeyUp={onKeyUp}/>;
+	return <input type="text" onKeyUp={onKeyUp} />;
 }
 
 export default class Root extends Component {
@@ -46,7 +46,7 @@ export default class Root extends Component {
 				</Row>
 				<Row>
 					<Col lg={12}>
-						<SearchResults results={this.state.results}/>
+						<SearchResults results={this.state.results} />
 					</Col>
 				</Row>
 			</Grid>

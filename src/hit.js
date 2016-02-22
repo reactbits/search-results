@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 export default function Hit(props) {
 	const fragments = _.map(props.fragments, (val, key) =>
-		<Fragments key={key} fieldName={key} fragments={val}/>
+		<Fragments key={key} fieldName={key} fragments={val} />
 	);
 	return (
 		<li>

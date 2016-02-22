@@ -15,7 +15,7 @@ function roundTook(took) {
 export default function SearchResults(props) {
 	const { results } = props;
 	const hits = results.hits || [];
-	const items = hits.map(hit => <Hit key={hit.id} {...hit}/>);
+	const items = hits.map(hit => <Hit key={hit.id} {...hit} />);
 	if (items.length === 0) {
 		return <div>No match</div>;
 	}
