@@ -28,14 +28,14 @@
     "classnames": "^2.2.3",
     "lang-map": "^0.4.0",
     "lodash": "^4.9.0",
-    "react": "^15.0.0",
-    "react-dom": "^15.0.0"
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
   },
   "devDependencies": {
     "http-proxy-middleware": "^0.13.0",
     "jquery": "^2.2.2",
     "qwest": "^4.3.0",
     "react-bootstrap": "^0.28.3",
-    "react-devpack": "^0.1.14"
+    "react-devpack": "^0.1.15"
   }
 }
