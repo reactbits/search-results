@@ -33,9 +33,9 @@
   },
   "devDependencies": {
     "http-proxy-middleware": "^0.13.0",
-    "jquery": "^2.2.2",
-    "qwest": "^4.3.0",
-    "react-bootstrap": "^0.28.3",
-    "react-devpack": "^0.1.16"
+    "jquery": "^2.2.3",
+    "qwest": "^4.3.2",
+    "react-bootstrap": "^0.28.5",
+    "react-devpack": "^0.1.17"
   }
 }
