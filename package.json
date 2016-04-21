@@ -35,6 +35,6 @@
     "http-proxy-middleware": "^0.14.0",
     "jquery": "^2.2.3",
     "react-bootstrap": "^0.29.0",
-    "react-devpack": "^0.1.19"
+    "react-devpack": "^0.1.20"
   }
 }
