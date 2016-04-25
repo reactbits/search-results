@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/reactbits/search-results#readme",
   "dependencies": {
-    "classnames": "^2.2.3",
+    "classnames": "^2.2.4",
     "lang-map": "^0.4.0",
     "lodash": "^4.11.1",
     "react": "^15.0.1",
