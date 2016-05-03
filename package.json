@@ -25,15 +25,15 @@
   },
   "homepage": "https://github.com/reactbits/search-results#readme",
   "dependencies": {
-    "classnames": "^2.2.4",
+    "classnames": "^2.2.5",
     "lang-map": "^0.4.0",
-    "lodash": "^4.11.1",
+    "lodash": "^4.11.2",
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
   },
   "devDependencies": {
     "jquery": "^2.2.3",
     "react-bootstrap": "^0.29.3",
-    "react-devpack": "^0.1.24"
+    "react-devpack": "^0.1.25"
   }
 }
