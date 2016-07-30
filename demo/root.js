@@ -33,7 +33,7 @@ export default class Root extends Component {
 			method: 'post',
 			body: JSON.stringify(payload),
 		}).then(res => res.json())
-		.then(results => this.setState({ results }));
+			.then(results => this.setState({ results }));
 	};
 
 	render() {
