@@ -15,7 +15,7 @@ function searchInput(handler) {
 	return <input type="text" onKeyUp={onKeyUp} />;
 }
 
-export default class Root extends Component {
+class Root extends Component {
 	state = {
 		results: {},
 	};
@@ -53,3 +53,5 @@ export default class Root extends Component {
 		);
 	}
 }
+
+export default Root;
