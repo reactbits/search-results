@@ -1,6 +1,6 @@
+import _ from 'lodash';
 import React from 'react';
 import Fragments from './fragments';
-import _ from 'lodash';
 
 export default function Hit(props) {
 	const fragments = _.map(props.fragments, (val, key) =>
