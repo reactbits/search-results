@@ -1,6 +1,6 @@
 {
   "name": "react-search-results",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "React component to display search results.",
   "main": "lib/index.js",
   "scripts": {
