@@ -3,7 +3,7 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import SearchResults from '../src';
 
 function searchInput(handler) {
-  const onKeyUp = e => {
+  const onKeyUp = (e) => {
     const input = $(e.target);
     if (e.which === 13) {
       const val = input.val();
@@ -20,13 +20,13 @@ class Root extends Component {
     results: {},
   };
 
-  search = s => {
+  search = (query) => {
     const payload = {
       size: 10,
       explain: true,
       highlight: {},
       query: {
-        term: s,
+        term: query,
       },
     };
     fetch('/api/search', {
