@@ -32,7 +32,7 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "jquery": "^3.1.1",
+    "jquery": "^3.2.0",
     "react-bootstrap": "^0.30.7",
     "react-devpack": "^0.2.15"
   }
