@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "jquery": "^3.2.0",
-    "react-bootstrap": "^0.30.8",
+    "react-bootstrap": "^0.30.10",
     "react-devpack": "^0.3.8"
   }
 }
